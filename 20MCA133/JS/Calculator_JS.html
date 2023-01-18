@@ -1,0 +1,60 @@
+<html>
+<head>
+<title>Calculator</title>
+</head>
+<p id="p1" ></p>
+
+Enter first number 	: <input type ="text" id="t1" maxlength="20"><br><br>
+Enter second number : <input type="text" id="t2" maxlength="20"><br><br>
+
+<button id ="b1">Calculate Sum</button></p>
+<button id ="b2">Calculate Difference</button></p>
+<button id ="b3">Calculate Multiplication</button></p>
+<button id ="b4">Calculate Division</button></p>
+
+<script>
+document.getElementById("b1").addEventListener("click",fun1)
+document.getElementById("b2").addEventListener("click",fun2)
+document.getElementById("b3").addEventListener("click",fun3)
+document.getElementById("b4").addEventListener("click",fun4)
+
+
+function fun1()
+{
+var txt1=parseInt(document.getElementById("t1").value);
+var txt2=parseInt(document.getElementById("t2").value);
+var sum= txt1+txt2;
+document.getElementById("p1").innerHTML="Sum of "+txt1+" and "+txt2+" is "+" "+sum;
+}
+
+function fun2()
+{
+var txt1=parseInt(document.getElementById("t1").value);
+var txt2=parseInt(document.getElementById("t2").value);
+var difference= txt1-txt2;
+document.getElementById("p1").innerHTML="Difference of "+txt1+" and "+txt2+" is "+" "+difference;
+}
+
+function fun3()
+{
+var txt1=parseInt(document.getElementById("t1").value);
+var txt2=parseInt(document.getElementById("t2").value);
+var multiplication= txt1*txt2;
+document.getElementById("p1").innerHTML="Multiplication of "+txt1+" and "+txt2+" is "+" "+multiplication;
+
+}
+
+function fun4()
+{
+var txt1=parseInt(document.getElementById("t1").value);
+var txt2=parseInt(document.getElementById("t2").value);
+var division= txt1/txt2;
+document.getElementById("p1").innerHTML="Division of "+txt1+" and "+txt2+" is "+" "+division;
+
+}
+
+
+
+
+</script>
+</html>
