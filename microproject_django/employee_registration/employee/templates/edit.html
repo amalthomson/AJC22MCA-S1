@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Employee</title>
+    {% load static %}
+    
+</head>
+<style>
+    body {
+        background:lightskyblue;
+      }
+    table{
+        background-color: white;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top:1em;
+        padding:1em;
+        border: 3px solid black;
+    }
+    tr,td,th{
+        padding:1em;
+        text-align: left;
+        border: 1px solid black;
+    }
+    .center th{
+        text-align: center;
+    }  
+</style>
+
+<body>
+    <br>
+	<br>
+	<br>
+	<br>
+	<center><h1><b><u>UPDATE EMPLOYEE DETAILS</u></b></h1><center>
+    <br>
+    <center>
+    <form method="POST" action="/update/{{employee.id}}">
+        {% csrf_token %}
+        
+            <table>
+                <tr><th>Employee ID:</th><td><input type="text" name="eid" value="{{employee.eid}}" /></td></tr>
+                    <tr><th>Employee Name</th><td><input type="text" name="ename" value="{{employee.ename}}" /></td></tr>
+                    <tr><th>Employee Email</th><td><input type="email" name="eemail" value="{{employee.eemail}}" /></td></tr>
+                    <tr><th>Employee Contact </th><td><input type="text" name="econtact" value="{{employee.econtact}}" /></td></tr>
+                    <tr class="center"><th colspan="2"><input type="submit" value="Update" name="update"></th></tr>
+                </table>
+    </form>
+</body>
+
+</html>

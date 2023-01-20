@@ -1,0 +1,22 @@
+body {
+    background: #eee;
+    height: 100%;
+    margin: 25px 0;
+    
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+}
+
+tr:hover {
+    background-color: red;
+}
+
+th {
+    background-color: #000000;
+    color: white;
+}
+
