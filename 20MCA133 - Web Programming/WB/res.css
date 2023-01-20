@@ -1,0 +1,16 @@
+body {
+	background-color: lightskyblue;
+	}
+
+h1	{
+		text-shadow: 2px 5px;
+		color: yellow;	
+	}
+
+.abc { color:green;
+	}
+
+#xyz {
+		color: blue;
+		text-align: center;
+} 

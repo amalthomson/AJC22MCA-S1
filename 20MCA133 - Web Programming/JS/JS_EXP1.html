@@ -1,0 +1,86 @@
+<html>
+<title> Home </title>
+<head>
+<style>
+h2{
+color:blue;
+}
+h3{
+color:red;
+text-align:center;
+}
+h4{color:green;
+}
+</style>
+<h1 id="hh"> AMAL JYOTHI COLLEGE OF ENGINEERING </h1>
+<p id="p1"> MY NAME IS AMAL THOMSON </p>
+
+
+<h2>JavaScript Math Constants</h2>
+
+<p id="demo1"></p>
+<p id="demo2"></p>
+<p id="demo3"></p>
+<p id="demo4"></p>
+<p id="demo5"></p>
+<p id="demo6"></p>
+<p id="demo7"></p>
+<p id="demo8"></p>
+<p id="demo9"></p>
+<p id="demo10"></p>
+
+<h2>Predefined Functions in a String </h2>
+<script>
+var a = "AJCE"
+var b = 20
+var c = 30
+var d = 12.34
+var e = {
+			f_name: "AJCE",
+			s_name: "MCA",
+			addrs:	"Kanjirapally",
+			distance: 20
+		};
+		
+var f = "AMAL COLLEGE JYOTHI AMAL COLLEGE"
+var g = f.slice(6,20)
+var h = f.substr(6,6)
+var i = f.substr(6)
+var j = f.replace("AMAL", "KANJIRAPALLY")
+var k = f.toLowerCase()
+var l = "AMAL"
+var m = "THOMSON"
+var n = l.concat(" ", m)
+
+document.write("<h2>"+ e.f_name +"</h2>")
+document.write("<h3>"+"f_name : "+e.f_name+"</h3?"+"<br>")
+document.write("<h3>"+"s_name : "+e.s_name+"</h3>")
+document.write("<h4>"+"addrs : "+e.addrs+"</h4>")
+document.write("<h4>"+"distance : "+e.distance+"</h4>")
+document.write(f.length+"<br>")
+document.write(pos=f.indexOf("COLLEGE")+"<br>")
+document.write(pos=f.lastIndexOf("COLLEGE")+"<br>")
+document.write(g+"<br>")
+document.write(h+"<br>")
+document.write(i+"<br>")
+document.write(j+"<br>")
+document.write(k+"<br>")
+document.write(n+"<br>")
+
+document.getElementById("p1").innerHTML="MCA"
+document.getElementById("hh").innerHTML="AJCE"
+
+document.getElementById("demo1").innerHTML = "<p><b>Round:</b> " + Math.round(4.6); + "</p>" 
+document.getElementById("demo2").innerHTML = "<p><b>Cell:</b> " + Math.ceil(4.9); + "</p>" 
+document.getElementById("demo3").innerHTML = "<p><b>Floor:</b> " + Math.floor(4.7);; + "</p>" 
+document.getElementById("demo4").innerHTML = "<p><b>Trunc:</b> " + Math.trunc(4.4); + "</p>" ;
+document.getElementById("demo5").innerHTML = "<p><b>Sign:</b> " + Math.sign(-4); + "</p>" 
+document.getElementById("demo6").innerHTML = "<p><b>Pow:</b> " + Math.pow(8, 2); + "</p>" 
+document.getElementById("demo7").innerHTML = "<p><b>SQRT:</b> " + Math.sqrt(64); + "</p>" 
+document.getElementById("demo8").innerHTML = "<p><b>ABS:</b> " + Math.abs(-4.7); + "</p>" 
+document.getElementById("demo9").innerHTML = "<p><b>MIN:</b> " + Math.min(0, 150, 30, 20, -8, -200); + "</p>" 
+document.getElementById("demo10").innerHTML = "<p><b>RANDOM:</b> " + Math.random(); + "</p>" 
+
+</script>
+</head>
+</html>

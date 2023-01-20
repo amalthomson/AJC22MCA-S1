@@ -1,0 +1,36 @@
+<html>
+<body>
+YEAR: <input type-"text" id="year _get"><br>
+MONTH: <input type-"text" id-"month get"><br>
+<input type="button" id="subtn" value= "Display Calender" onclick=" generate()" ><br>
+
+<div id="content" </div>
+
+<body>
+
+<script
+function generate()
+var init content = "table BORDER=1
+id='calender'><tr><th>Sun</th><th>Mon</th><th>Tue</th>th>Wed</th><th>Thu</th>
+<th>Fri</th> <th> Sat</th></tr><tr>"
+var year_get = document. getElementByld("year get"). value;
+var month_get = document. getElementById("month_ get").value;
+month _get =1;
+var date = new Date(year_ get,month _get);
+var day = date getDay0;
+for (var i = 0; i < day; it +)
+init_content += " td></td>,
+{
+while (date. getMonth0 =- month get)
+init_content += " <td> + date.getDate + "</td>";
+if (date. getDay0 =- 6)
+{
+init content += "</tr><tr>";
+}
+date.setDate(date.getDate()+1);
+|
+init_content+="</table>"
+documnet.getElementById("content").innerHTML=init_content;
+}
+</script>
+</html>
