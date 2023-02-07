@@ -1,0 +1,44 @@
+<html>
+<head>
+<h2> CALENDAR USING HTML & JAVASCRIPT </h2>
+</head>
+<body>
+<label> YEAR...  :</label>
+<input type="text" id="year"> <br><br>
+<label> MONTH: </label>
+<input type="text" id="month"> <br><br>
+<input type="button" id="calender" value="Generate Calendar" onclick="cal()">
+<div id="cal">
+</div>
+</body>
+
+<script>
+function cal()
+{
+var i_cal="<table BORDER=2 id="clndr"><tr><th> MONDAY </th><th> MONDAY </th><th> TUESDAY </th><th> WEDNESDAY </th><th> THRUSDAY </th><th> FRIDAY </th><th> SATURDAY </th><th> SUNDAY </th></tr>"
+var year=documnet.getElementById("year").value;
+var month=documnet.getElementById("month").value;
+month=month-1;
+var date=new Date(year, month);
+var day=date.getDay();
+for(var i=0;i<day;i++)
+{
+i_cal += "<td></td>";
+}
+while(date.getMonth()==month)
+{
+i_cal += "<td>" + date.getDate() +"</tr>";
+if(date.getDay()==6)
+{
+i_cal += "<tr>""</tr>";
+}
+date.setDate(date.getDate+1);
+}
+i_cal += "</table>"
+document.getElementById("cal").innerHTML=i_cal;
+}
+
+</script>
+
+
+</html>

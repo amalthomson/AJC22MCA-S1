@@ -1,0 +1,59 @@
+<html>
+<title> Home </title>
+<head>
+<style>
+h2{
+color:blue;
+}
+h3{
+color:red;
+text-align:center;
+}
+h4{color:green;
+}
+</style>
+<h1 id="hh"> AMAL JYOTHI COLLEGE OF ENGINEERING </h1>
+<p id="p1"> MY NAME IS AMAL THOMSON </p>
+
+<script>
+var a = "AJCE"
+var b = 20
+var c = 30
+var d = 12.34
+var e = {
+			f_name: "AJCE",
+			s_name: "MCA",
+			addrs:	"Kanjirapally",
+			distance: 20
+		};
+var f = "AMAL COLLEGE JYOTHI AMAL COLLEGE"
+var g = f.slice(6,20)
+var h = f.substr(6,6)
+var i = f.substr(6)
+var j = f.replace("AMAL", "KANJIRAPALLY")
+var k = f.toLowerCase()
+var l = "AMAL"
+var m = "THOMSON"
+var n = l.concat(" ", m)
+
+document.write("<h2>"+ e.f_name +"</h2>")
+document.write("<h3>"+"f_name : "+e.f_name+"</h3?"+"<br>")
+document.write("<h3>"+"s_name : "+e.s_name+"</h3>")
+document.write("<h4>"+"addrs : "+e.addrs+"</h4>")
+document.write("<h4>"+"distance : "+e.distance+"</h4>")
+document.write(f.length+"<br>")
+document.write(pos=f.indexOf("COLLEGE")+"<br>")
+document.write(pos=f.lastIndexOf("COLLEGE")+"<br>")
+document.write(g+"<br>")
+document.write(h+"<br>")
+document.write(i+"<br>")
+document.write(j+"<br>")
+document.write(k+"<br>")
+document.write(n+"<br>")
+
+document.getElementById("p1").innerHTML="MCA"
+document.getElementById("hh").innerHTML="AJCE"
+
+</script>
+</head>
+</html>
