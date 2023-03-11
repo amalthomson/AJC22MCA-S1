@@ -1,6 +1,7 @@
+a=10
+b=11.11
+c=7
 
-a=float(input("Enter the first number : "))
-b=float(input("Enter the second number : "))
-c=float(input("Enter the third number : "))
-m=max(a, b, c)
-print("The largest number is :", m)
+largest=max(a,b,c)
+
+print(largest)

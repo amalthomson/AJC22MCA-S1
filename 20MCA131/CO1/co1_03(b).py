@@ -1,4 +1,2 @@
-x=int(input("Enter the lower limit : "))
-y=int(input("Enter the upper limit : "))
-sq=[i*i for i in range(x, y)]
+sq=[i*i for i in range (1,5)]
 print(sq)

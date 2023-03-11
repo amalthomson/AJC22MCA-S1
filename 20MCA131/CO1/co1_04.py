@@ -1,6 +1,6 @@
-string=str(input("Enter the string : "))
+
+string="my name is my name"
 a={}
-print(string)
 s=string.split()
 
 for i in s:
@@ -9,4 +9,5 @@ for i in s:
     else:
         a[i]=1
 for m,n in a.items():
-    print(m,"occurs ",n," times")
+    print(m,"appears",n,"times")
+

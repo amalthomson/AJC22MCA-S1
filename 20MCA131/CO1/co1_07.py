@@ -5,11 +5,15 @@ for i in range (0,x):
     lx.append(a)
 print("\nList 1 is ;", lx)
 y=int(input("\nEnter the size of list 2 : "))
+
 ly=[]
 for i in range (0,y):
     b=int(input("Enter Number : "))
     ly.append(b)
 print("\nList 2 is : ", ly)
+
+
+
 if (len(lx)==len(ly)):
     print("\nThe size of both list are equal")
 else:
